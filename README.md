@@ -11,9 +11,11 @@ I developed this application using the Api at https://newsapi.org/, so that user
 </p>
 
 ## Libraries Used in the Project
+* Java
 * MVVM
 * Retrofit
 * Picasso
+* Data Binding
 * View Binding
 * Gson
 * Swipe Refresh
