@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".View.MainActivity">
+    <RadioGroup
+        android:id="@+id/radio_group_categories"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3" >
+        <RadioButton
+            android:id="@+id/rdbtn_all"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/category_all"
+            android:gravity="center"
+            android:textColor="@color/radio_flat_text_selector"/>
+
+        <RadioButton
+            android:id="@+id/rdbtn_science"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@null"
+            android:text="@string/category_science"
+            android:gravity="center"
+            android:textColor="@color/radio_flat_text_selector"/>
+
+        <RadioButton
+            android:id="@+id/rdbtn_sports"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@null"
+            android:text="@string/category_sports"
+            android:gravity="center"
+            android:textColor="@color/radio_flat_text_selector"/>
+    </RadioGroup>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/radio_group_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

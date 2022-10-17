@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/pb_circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/pbText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:text="@string/please_wait"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

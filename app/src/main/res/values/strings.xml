@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Türkiye - Haberler</string>
+    <string name="category_all">Tüm Haberler</string>
+    <string name="category_science">Bilim</string>
+    <string name="category_sports">Spor</string>
+    <string name="no_news_to_show">Gösterilecek haber bulunamadı!</string>
+    <string name="no_internet_connection">İnternete bağlı değilsiniz, lütfen bağlantınızı kontrol ettikten sonra sayfayı sürükleyerek yenileyiniz!</string>
+    <string name="please_wait">Lütfen bekleyiniz!</string>
+</resources>
